@@ -2,7 +2,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color: #0c2461;
+    background-color: #131f3f;
     color: #000000;
 
     display: grid;
@@ -20,9 +20,9 @@ header{
 }
 
 h1 {
-    font-family: 'Permanent Marker', cursive;
-    color: #fad390;
-    font-size: 2em;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #ecf0f1;
+    font-size: 2.5em;
     text-shadow: 2px 8px black;  
 }
 
@@ -43,7 +43,8 @@ main{
     border-left: 10px solid black; 
     border-radius: 5px;
     background-color: #c23616;
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: 800;
 }
 
 .mon{
@@ -85,16 +86,9 @@ main{
 footer {
     grid-area: foot;
     height: 20vh;
-    font-family: 'Permanent Marker', cursive;
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: center;
-  }
-
-  .red{
-      color: #c23616;;
-  }
-
-  .green{
-      color: #44bd32;
+    transform: translateY(-3vh);
+    color: #a4a7a8;
   }
