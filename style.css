@@ -1,0 +1,100 @@
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0c2461;
+    color: #000000;
+
+    display: grid;
+    grid-template-areas:    "head head head head head"
+                            "main main main main main"
+                            "foot foot foot foot foot";
+}
+
+header{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #fad390;
+    font-size: 2em;
+    text-shadow: 2px 8px black;  
+}
+
+main{
+    grid-area: main;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ecf0f1;
+}
+
+.day{
+    height: calc(20vw - 12px);
+    width: calc(20vw - 12px);
+    border-top: 10px solid black; 
+    border-bottom: 10px solid black;
+    border-left: 10px solid black; 
+    border-radius: 5px;
+    background-color: #c23616;
+    font-size: 1em;
+}
+
+.mon{
+    background-image: url('img/workout.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tue{
+    background-image: url('img/coding.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wed{
+    background-image: url('img/simulator.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thu{
+    background-image: url('img/book.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fri{
+    background-image: url('img/sleep.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 10px solid black;  
+}
+
+footer {
+    grid-area: foot;
+    height: 20vh;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .red{
+      color: #c23616;;
+  }
+
+  .green{
+      color: #44bd32;
+  }
