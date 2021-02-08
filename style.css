@@ -64,35 +64,35 @@ main{
 }
 
 .mon{
-    background-image: url('img/workout.svg');
+    background-image: url('img/questionmark.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .tue{
-    background-image: url('img/coding.svg');
+    background-image: url('img/questionmark.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .wed{
-    background-image: url('img/simulator.svg');
+    background-image: url('img/questionmark.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .thu{
-    background-image: url('img/book.svg');
+    background-image: url('img/questionmark.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fri{
-    background-image: url('img/sleep.svg');
+    background-image: url('img/questionmark.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;

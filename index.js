@@ -4,6 +4,7 @@ const wed = document.querySelector('.wed');
 const thu = document.querySelector('.thu');
 const fri = document.querySelector('.fri');
 
+//change background color of day icons - red/green
 
 let colors =['#44bd32', '#c23616'];
 let m = 0;
@@ -11,7 +12,6 @@ let t = 0;
 let w = 0;
 let th = 0;
 let f = 0;
-
 
 let chngMon = () => {  
     mon.style.backgroundColor = colors[m];
@@ -61,4 +61,64 @@ let chngFri = () => {
     } else {
       f = 0;
     }
+};
+
+//change day icons
+
+let icons=["url('img/workout.svg')", "url('img/coding.svg')", "url('img/simulator.svg')", "url('img/book.svg')", "url('img/sleep.svg')"];
+let m1= 0;
+let t1 = 0;
+let w1 = 0;
+let th1 = 0;
+let f1 = 0;
+
+let chngIconMon = () => {  
+  
+  mon.style.backgroundImage = icons[m1];
+
+  if (m1 < icons.length-1){
+      m1++;
+  } else {
+    m1 = 0;
+  }
+};
+
+let chngIconTue = () => {  
+  tue.style.backgroundImage = icons[t1];
+
+  if (t1 < icons.length-1){
+      t1++;
+  } else {
+    t1 = 0;
+  }
+};
+
+let chngIconWed = () => {  
+  wed.style.backgroundImage = icons[w1];
+
+  if (w1 < colors.length-1){
+      w1++;
+  } else {
+    w1 = 0;
+  }
+};
+
+let chngIconThu = () => {  
+  thu.style.backgroundImage = icons[th1];
+
+  if (th1 < colors.length-1){
+      th1++;
+  } else {
+    th1 = 0;
+  }
+};
+
+let chngIconFri = () => {  
+  fri.style.backgroundImage = icons[f1];
+
+  if (f1 < colors.length-1){
+      f1++;
+  } else {
+    f1 = 0;
+  }
 };
