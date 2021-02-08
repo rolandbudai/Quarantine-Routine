@@ -8,7 +8,9 @@ body{
     color: #000000;
     display: grid;
     grid-template-areas:    "head head head head head"
+                            "btn  btn  btn  btn  btn"
                             "main main main main main"
+                            "low  low  low  low  low"
                             "foot foot foot foot foot";
 }
 
@@ -23,14 +25,30 @@ header{
 h1 {
     font-family: 'Yusei Magic', sans-serif;
     color: #ecf0f1;
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 900;
     text-shadow: 2px 8px black;  
 }
 
+.change-button{
+    grid-area: btn;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    background-color: #ecf0f1;
+}
+
+.change-button button{
+    width: 19vw;
+    border: 3px solid black; 
+    border-radius: 5px;
+    background-color: #d7dbdd;
+}
+
 main{
     grid-area: main;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,8 +61,6 @@ main{
     border: 10px solid black; 
     border-radius: 5px;
     background-color: #c23616;
-    font-size: 0.9em;
-    font-weight: 600;
 }
 
 .mon{
@@ -82,6 +98,23 @@ main{
     background-position: center;
 }
 
+.lower{
+    grid-area: low;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    background-color: #ecf0f1;
+}
+
+.lower button{
+    width: 19vw;
+    height: 5vh;
+    border: 3px solid black; 
+    border-radius: 5px;
+    background-color: #d7dbdd;
+}
+
 footer {
     grid-area: foot;
     height: 20vh;
@@ -90,4 +123,11 @@ footer {
     justify-content: center;
     transform: translateY(-2vh);
     color: #a4a7a8;
+  }
+
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 2.5em;
+    }
   }
