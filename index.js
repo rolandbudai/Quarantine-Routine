@@ -75,7 +75,6 @@ let f1 = 0;
 let chngIconMon = () => {  
   
   mon.style.backgroundImage = icons[m1];
-
   if (m1 < icons.length-1){
       m1++;
   } else {
@@ -85,7 +84,6 @@ let chngIconMon = () => {
 
 let chngIconTue = () => {  
   tue.style.backgroundImage = icons[t1];
-
   if (t1 < icons.length-1){
       t1++;
   } else {
@@ -95,7 +93,6 @@ let chngIconTue = () => {
 
 let chngIconWed = () => {  
   wed.style.backgroundImage = icons[w1];
-
   if (w1 < colors.length-1){
       w1++;
   } else {
@@ -105,7 +102,6 @@ let chngIconWed = () => {
 
 let chngIconThu = () => {  
   thu.style.backgroundImage = icons[th1];
-
   if (th1 < colors.length-1){
       th1++;
   } else {
@@ -115,10 +111,25 @@ let chngIconThu = () => {
 
 let chngIconFri = () => {  
   fri.style.backgroundImage = icons[f1];
-
   if (f1 < colors.length-1){
       f1++;
   } else {
     f1 = 0;
   }
+};
+
+// Randomize icons
+let randomIcons = () => {
+
+  let randomMon = Math.floor(Math.random()*6);
+  let randomTue = Math.floor(Math.random()*6);
+  let randomWed = Math.floor(Math.random()*6);
+  let randomThu = Math.floor(Math.random()*6);
+  let randomFri = Math.floor(Math.random()*6);
+  
+  mon.style.backgroundImage = icons[randomMon];
+  tue.style.backgroundImage = icons[randomTue];
+  wed.style.backgroundImage = icons[randomWed];
+  thu.style.backgroundImage = icons[randomThu];
+  fri.style.backgroundImage = icons[randomFri];
 };
