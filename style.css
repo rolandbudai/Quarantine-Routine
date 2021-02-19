@@ -1,10 +1,15 @@
+:root{
+    --buttoncolor: #ca9f287c;
+}
+
 *{
     box-sizing: border-box;
 }
 
 body{
+    
     margin: 0;
-    background-color: #2c2c54;
+    background-color: #192a56;
     color: #000000;
     display: grid;
     grid-template-areas:    "head head head head head"
@@ -16,48 +21,59 @@ body{
 
 header{
     grid-area: head;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 20vh;
+    display: grid;
+    justify-self: center;
 }
 
-h1 {
+.title{
     font-family: 'Yusei Magic', sans-serif;
-    color: #ecf0f1;
-    font-size: 4em;
+    color: #ffffff;
+    font-size: 3em;
     font-weight: 900;
-    text-shadow: 2px 8px black;  
+    text-shadow: 2px 8px black; 
+    align-self: end;
+}
+
+.title2{
+    justify-self: center;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #b3b8bb;
+    font-size: 1em;
+    text-shadow: 1px 1px black; 
 }
 
 .change-button{
     grid-area: btn;
-    height: 10vh;
+    height: 17vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;   
-    background-color: #ecf0f1;
+    align-items: flex-end;
+    background-color: #dfe3e6;
+    border-top: 5px solid black;
 }
 
 .change-button button{
-    width: 19vw;
+    width: 12vw;
+    height: 3vh;
     border: 3px solid black; 
     border-radius: 5px;
-    background-color: #d7dbdd;
+    background-color: var(--buttoncolor);
+    font-weight: 700;
 }
 
 main{
     grid-area: main;
-    height: 40vh;
+    height: 26vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ecf0f1;
+    background-color: #dfe3e6;
 }
 
 .day{
-    height: 19vw;
-    width: 19vw;
+    height: 19vh;
+    width: 19vh;
     border: 10px solid black; 
     border-radius: 5px;
     background-color: #c23616;
@@ -100,19 +116,21 @@ main{
 
 .lower{
     grid-area: low;
-    height: 10vh;
+    height: 17vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;   
-    background-color: #ecf0f1;
+    align-items: flex-start;  
+    background-color: #dfe3e6;
+    border-bottom: 5px solid black;
 }
 
 .lower button{
-    width: 19vw;
+    width: 25vw;
     height: 5vh;
     border: 3px solid black; 
     border-radius: 5px;
-    background-color: #d7dbdd;
+    background-color: var(--buttoncolor);
+    font-weight: 900;
 }
 
 footer {
