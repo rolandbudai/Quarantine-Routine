@@ -1,5 +1,6 @@
 :root{
-    --buttoncolor: #ca9f2849;
+    --buttoncolor: #d1bc60bd;
+    --bg: rgb(207, 229, 233);
 }
 
 *{
@@ -28,7 +29,7 @@ header{
 
 .title{
     font-family: 'Yusei Magic', sans-serif;
-    color: #ffffff;
+    color: #f7f7f7;
     font-size: 3.8em;
     font-weight: 900;
     text-shadow: 2px 8px black; 
@@ -38,7 +39,7 @@ header{
 .title2{
     justify-self: center;
     font-family: 'Yusei Magic', sans-serif;
-    color: #b3b8bb;
+    color: #8eaabd;
     font-size: 1em;
     text-shadow: 1px 1px black; 
 }
@@ -49,7 +50,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #dfe3e6;
+    background-color: var(--bg);
     border-top: 5px solid black;
 }
 
@@ -70,7 +71,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #dfe3e6;
+    background-color: var(--bg);
 }
 
 .day{
@@ -123,7 +124,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;  
-    background-color: #dfe3e6;
+    background-color: var(--bg);
     border-bottom: 5px solid black;
     z-index: 1;
 }
