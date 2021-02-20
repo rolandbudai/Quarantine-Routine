@@ -133,3 +133,4 @@ let randomIcons = () => {
   thu.style.backgroundImage = icons[randomThu];
   fri.style.backgroundImage = icons[randomFri];
 };
+
