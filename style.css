@@ -1,7 +1,12 @@
 :root{
-    --buttoncolor: #cca61e;;
-    --bg: rgb(191, 196, 196);
-    --head: #000000;
+    --head: #003049;
+    --line: #000000;
+    --boxcolor: #EAE2B7;
+    --bg: #FCBF49;
+    --btn: #E5E5E5; 
+
+    --title: #F77F00;
+    --title2: #ffffff;
 }
 
 
@@ -14,7 +19,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to left, #e53935 , #e35d5b);
+    background: var(--bg);
     
     color: #000000;
     display: grid;
@@ -32,21 +37,22 @@ header{
     text-align: center;
     background-color: var(--head);
     width: 100%;
+    color: var(--boxcolor);
 }
 
 .title{
     font-family: 'Yusei Magic', sans-serif;
-    color: #ffffff;
     font-size: 3.8em;
     font-weight: 900;
     text-shadow: 2px 8px black; 
     align-self: end;
+    color:var(--title2);
 }
 
 .title2{
     justify-self: center;
     font-family: 'Yusei Magic', sans-serif;
-    color: var(--bg);
+    color: var(--title);
     font-size: 1em;
     text-shadow: 1px 1px black; 
 }
@@ -57,7 +63,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    border-top: 5px solid var(--buttoncolor);
+    border-top: 5px solid var(--line);
 }
 
 .change-button button{
@@ -85,7 +91,7 @@ main{
     width: calc(100vw/5 - 4px);
     border: 7px solid black; 
     border-radius: 5px;
-    background-color: var(--buttoncolor);
+    background-color: var(--boxcolor);
     cursor: pointer;
     background-image: url('img/questionmark.svg');
     background-size: 90%;
@@ -99,7 +105,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;  
-    border-bottom: 5px solid var(--buttoncolor);
+    border-bottom: 5px solid var(--line);
 }
 
 footer {
@@ -108,13 +114,13 @@ footer {
     display: flex;
     align-items:flex-end;
     justify-content: center;
-    color: #c6ccce;
+    color: var(--title2);
     background-color: var(--head);
     padding-bottom: 10px;
   }
 
   .box {
-	background: linear-gradient(to right, #331803da , #e7dfdf);
+	background: var(--btn);
 	color: rgb(0, 0, 0);
 	--width: 250px;
 	--height: calc(var(--width) / 3);
