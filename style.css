@@ -61,10 +61,10 @@ header{
 }
 
 .change-button button{
-    width: 14vw;
+    width: 18vw;
     height: 6vh;
     color: rgb(0, 0, 0);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: 'Yusei Magic', sans-serif;
     text-align: center;
     display: flex;
@@ -114,7 +114,7 @@ footer {
   }
 
   .box {
-	background: linear-gradient(to left, #e72d2a , #e6524f);
+	background: linear-gradient(to right, #331803da , #e7dfdf);
 	color: rgb(0, 0, 0);
 	--width: 250px;
 	--height: calc(var(--width) / 3);
@@ -166,4 +166,11 @@ footer {
         padding-top: 1rem;
     }
 
+    .change-button button{
+        width: 19vw;
+        font-size: 0.6rem;
+        font-weight: 600;
+        border-radius: 15px;;
+    }
+    
   }
