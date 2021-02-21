@@ -6,7 +6,7 @@ const fri = document.querySelector('.fri');
 
 //change background color of day icons - red/green
 
-let colors =['#44bd32', '#e1b12c'];
+let colors =['#44bd32', '#c23616'];
 let m = 0;
 let t = 0;
 let w = 0;
