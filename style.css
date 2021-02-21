@@ -1,6 +1,7 @@
 :root{
-    --buttoncolor: #ffffff;
+    --buttoncolor: #cca61e;;
     --bg: rgb(191, 196, 196);
+    --head: #000000;
 }
 
 
@@ -12,7 +13,9 @@
 
 body{
     width: 100vw;
-    background-color: #194056;
+    height: 100vh;
+    background: linear-gradient(to left, #e53935 , #e35d5b);
+    
     color: #000000;
     display: grid;
     grid-template-areas:    "head head head head head"
@@ -25,8 +28,10 @@ body{
 header{
     grid-area: head;
     height: 20vh;
-    display: grid;
-    justify-self: center;
+    display: block;
+    text-align: center;
+    background-color: var(--head);
+    width: 100%;
 }
 
 .title{
@@ -52,8 +57,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: var(--bg);
-    border-top: 5px solid #e1b12cbb;
+    border-top: 5px solid var(--buttoncolor);
 }
 
 .change-button button{
@@ -74,15 +78,14 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--bg);
 }
 
 .day{
-    height: 19vh;
-    min-width: 19vh;
+    height: calc(100vw/5);
+    width: calc(100vw/5 - 4px);
     border: 7px solid black; 
     border-radius: 5px;
-    background-color: var(--bg);
+    background-color: var(--buttoncolor);
     cursor: pointer;
     background-image: url('img/questionmark.svg');
     background-size: 90%;
@@ -96,8 +99,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;  
-    background-color: var(--bg);
-    border-bottom: 5px solid #e1b12cbb;
+    border-bottom: 5px solid var(--buttoncolor);
 }
 
 footer {
@@ -106,12 +108,13 @@ footer {
     display: flex;
     align-items:flex-end;
     justify-content: center;
-    transform: translateY(-2vh);
     color: #c6ccce;
+    background-color: var(--head);
+    padding-bottom: 10px;
   }
 
   .box {
-	background: linear-gradient(to right, #e1b12c,#e1b12cbb);
+	background: linear-gradient(to left, #e72d2a , #e6524f);
 	color: rgb(0, 0, 0);
 	--width: 250px;
 	--height: calc(var(--width) / 3);
@@ -123,11 +126,11 @@ footer {
 	font-family: 'Yusei Magic', sans-serif;
     font-weight: 600;;
 	letter-spacing: 0.1em;
-	border: 1px solid darkgoldenrod;
+	border: 1px solid rgb(0, 0, 0);
 	border-radius: 2em;
 	transform: perspective(500px) rotateY(-15deg);
 	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
-	box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.747);
+	box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.849);
 	transition: 0.5s;
 	position: relative;
 	overflow: hidden;
@@ -158,7 +161,9 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    h1{
-        font-size: 2.5em;
+    .title{
+        font-size: 2.2rem;
+        padding-top: 1rem;
     }
+
   }
