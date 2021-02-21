@@ -11,7 +11,7 @@
 }
 
 body{
-    max-width: 100vw;
+    width: 100vw;
     background-color: #194056;
     color: #000000;
     display: grid;
@@ -79,10 +79,10 @@ main{
 
 .day{
     height: 19vh;
-    width: 19vh;
+    min-width: 19vh;
     border: 7px solid black; 
     border-radius: 5px;
-    background-color: #c23616;
+    background-color: var(--bg);
     cursor: pointer;
     background-image: url('img/questionmark.svg');
     background-size: 90%;
