@@ -170,7 +170,8 @@ footer {
           justify-content: center;
   color: var(--title2);
   background-color: var(--head);
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+
 }
 
 
@@ -208,8 +209,8 @@ footer {
 
 @media screen and (max-width: 700px) {
   .title {
-    font-size: 2.8rem;
-    padding-top: 1rem;
+    font-size: 2.6rem;
+    padding-top: 2rem;
   }
 }
 
@@ -234,10 +235,3 @@ footer {
   }  
 }
 
-
-@media screen and (max-height: 700px) {
-  .day {
-    height: calc(100vw/7);
-    width: calc(100vw/7 - 4px);
-  }
-}
